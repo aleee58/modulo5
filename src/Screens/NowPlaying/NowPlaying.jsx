@@ -3,7 +3,7 @@ import React from "react";
 const NowPlaying = () => {
     return (
         <div>
-            nueva cartelera
+            En cartelera
         </div>
     );
 }
