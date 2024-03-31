@@ -3,6 +3,7 @@ import CardContainer from "../../Components/CardContainer/CardContainer";
 import styles from "./NowPlaying.module.css"
 import { DataProvider } from "../../Utils/DataProvider";
 import Loader from "../../Components/Loader/Loader";
+import Pagination from "../../Components/Pagination/Pagination";
 
 const NowPlaying = () => {
 
@@ -21,7 +22,7 @@ const NowPlaying = () => {
            console. log(err);
            alert("Error al cargar las peliculas")
         })
-        .finally(() => setLoading(False))
+        .finally(() => setLoading(false))
     }
 
     useEffect(() => {
@@ -37,7 +38,7 @@ const NowPlaying = () => {
                 :
                 <CardContainer movies={movies} />       
             }
-            <Pagination page={page} setPage={setPager} />
+            <Pagination page={page} setPage={setPage} />
         </div>
     );
 }

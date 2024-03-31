@@ -3,8 +3,8 @@ import styles from "./Loader.module.css"
 
 const Loader = () => {
     return (
-        <div class={styles.loader}>
-            <div class="loader">
+        <div className={styles.loader}>
+            <div className="loader">
                 <div className={styles.bar1}></div>
                 <div className={styles.bar2}></div>
                 <div className={styles.bar3}></div>
