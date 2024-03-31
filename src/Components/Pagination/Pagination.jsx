@@ -10,6 +10,22 @@ const Pagination = ({page, setPage}) => {
             } else return
     }
 
+    const handleEnter = (e) => {
+        if(e.key==="Enter"){
+            if(Number (actualPage) <= maxPage){
+            setPage(actualPage)
+        } else {
+            alert("el numero maximo de paginas es: " + maxPage)
+        }
+
+        }
+
+    }
+    const[actualPage, setActualPage] = useState(page);
+    const handleChange = (e) => {
+        setActualPage(e.target.value)
+    }
+
     return ( 
         <div className={styles.container}>
             <button className={styles.btn} onClick={() => handleClick("restar")}>-</button>

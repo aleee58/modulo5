@@ -29,5 +29,34 @@ export const DataProvider = {
 
         } 
 
-    }
+    },
+
+    getTopRelatedMovies: async (page=1) => {
+        try {
+            const response = await fetch (`https://api.themoviedb.org/3/movie/top_related?language=es&page=${page}`, {headers: headers})
+            const movies = await response.text()
+            return JSON.parse(movies)
+
+        } catch (error) {
+            alert("hubo un error al obtener las peliculas")
+            console.log(error)
+
+        } 
+
+    },
+
+
+    getUpcomingMovies: async (page=1) => {
+        try {
+            const response = await fetch (`https://api.themoviedb.org/3/movie/upcoming?language=es&page=${page}`, {headers: headers})
+            const movies = await response.text()
+            return JSON.parse(movies)
+
+        } catch (error) {
+            alert("hubo un error al obtener las peliculas")
+            console.log(error)
+
+        } 
+
+    },
 }
