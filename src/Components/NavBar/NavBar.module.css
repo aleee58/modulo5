@@ -12,15 +12,21 @@
 
 .link {
     text-decoration: none;
-    color: white;
+    color: rgb(234, 230, 230);
     font-weight: 600;
     font-size: 1.5rem;
 
 }
 
 .logo{
+    height: 55px;
+    width: 55px;
+    
+}
 
-    width:70px;
-    }
+.link:hover {
+    color: rgb(139, 138, 142);
+    transition: all 300ms;
+}
 
 
