@@ -29,7 +29,7 @@ const Upcoming = () => {
 
     return (
         <div className={styles.container}>
-        <h1>Ahora en cartelera</h1>
+        <h1>Proximamente</h1>
         {
             loading ?
             <Loader/>

@@ -1,4 +1,5 @@
 import styles from "./Pagination.module.css"
+import React, { useState } from "react";
 
 const Pagination = ({page, setPage}) => {
     

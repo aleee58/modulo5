@@ -33,7 +33,7 @@ export const DataProvider = {
 
     getTopRelatedMovies: async (page=1) => {
         try {
-            const response = await fetch (`https://api.themoviedb.org/3/movie/top_related?language=es&page=${page}`, {headers: headers})
+            const response = await fetch (`https://api.themoviedb.org/3/tv/top_rated?language=es&page=${page}`, {headers: headers})
             const movies = await response.text()
             return JSON.parse(movies)
 

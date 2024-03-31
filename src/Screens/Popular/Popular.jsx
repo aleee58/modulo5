@@ -30,7 +30,7 @@ const Popular = () => {
 
     return (
         <div className={styles.container}>
-        <h1>Ahora en cartelera</h1>
+        <h1>Populares</h1>
         {
             loading ?
             <Loader/>

@@ -29,7 +29,7 @@ const TopRelated = () => {
 
     return (
         <div className={styles.container}>
-        <h1>Ahora en cartelera</h1>
+        <h1>Mejor calificados</h1>
         {
             loading ?
             <Loader/>
